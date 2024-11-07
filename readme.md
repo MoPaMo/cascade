@@ -1,3 +1,3 @@
 # bento-expand
 
-Apple product pages like bento boxes with expandable info, for hackclub cascade.
+Bali travel agency themed Apple product pages like bento boxes with expandable info about Bali, for hackclub cascade.
