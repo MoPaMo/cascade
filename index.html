@@ -150,9 +150,68 @@
         font-weight: 700!important
 
       }
+      .bird{
+        position: absolute;
+        top: 10px;
+        left: -100%;
+        z-index: 0;
+        height: 200px;
+        object-fit: cover;
+        opacity: 1;
+        animation: fly 30s ease-in 1s infinite forwards ;
+        z-index: 99;
+        rotate: 20deg;
+
+      }
+        .bird:nth-child(1){
+            animation-delay: 0s;
+        }
+        .bird:nth-child(2){
+            animation-delay: 0.25s;
+        }
+        .bird:nth-child(3){
+            animation-delay: 0.5s;
+        }
+
+        @keyframes fly {
+            0% {
+            transform: translateY(0);
+            left: -100%;
+            top: 10px;
+            }
+            1% {
+            transform: translateY(-10%);
+            }
+            2% {
+            transform: translateY(-5%);
+            }
+            3% {
+            transform: translateY(-12%);
+            }
+            4% {
+            transform: translateY(-10%);
+            }
+            5% {
+            transform: translateY(-14%);
+            }
+            6% {
+                left: 100%;
+            transform: translateY(-10%);
+            top: 30%;
+            }
+            100% {
+                left: 100%;
+            transform: translateY(0);
+            }
+
+        }
+
     </style>
   </head>
   <body>
+    <img src="Red-tailed_Tropicbird_RWD2 Background Removed.png" alt="bird" class="bird">
+    <img src="Red-tailed_Tropicbird_RWD2 Background Removed.png" alt="bird" class="bird">
+    <img src="Red-tailed_Tropicbird_RWD2 Background Removed.png" alt="bird" class="bird">
     <div class="grid grid-cols-12 gap-4 p-4 bg-gray-100 h-screen grid-flow-row">
       <div
         class="col-start-1 col-end-5 row-start-1 row-end-3 bg-green-300 text-white p-4 rounded-2xl bg-cover bg-center"
